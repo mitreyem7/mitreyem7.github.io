@@ -1,0 +1,120 @@
+html,
+body {
+  min-width: 300px;
+  color: black;
+  background-color: #eee;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+#navbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+  border-color: gray;
+
+}
+
+header {
+  margin: 10px;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+#navbar ul {
+  height: 80%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+}
+
+#navbar li {
+
+  border-top: 1px solid;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+
+#navbar a {
+  display: block;
+  padding: 10px 30px;
+  color: black;
+  text-decoration: none;
+}
+
+#main-doc {
+  position: relative;
+  margin-left: 310px;
+  padding: 20px;
+    margin-bottom: 100px;
+}
+
+
+#main-doc header {
+  text-align: left;
+  margin: 0px;
+  font-size: 1.7em;
+}
+
+section article {
+  margin: 15px;
+  font-size: .95em;
+}
+
+h2 {
+  font-size: 2em;
+  
+}
+
+samp {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  background-color: white;
+  color: darkred;
+  padding: 15px;
+  margin: 10px;
+}
+
+code {
+  color: red;
+  font-size: .9em;
+}
+
+@media only screen and (max-width: 800px) {
+  #navbar ul {
+ padding: 0;
+    height: 180px;
+  }
+
+  #navbar {
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    border-bottom: 2px solid;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 275px;
+  }
+  
+  img {
+    width: 90%;
+  }
+}

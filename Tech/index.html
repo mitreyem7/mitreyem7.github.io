@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Technical Documentation</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<nav id="navbar">
+  <header>CSS Grid</header>
+  <ul>
+    <li><a class="nav-link" href="#introduction">Introduction
+    </a></li>
+    <li><a class="nav-link" href="#grid_gaps">Grid Gaps
+    </a></li>
+    <li><a class="nav-link" href="#grid_lines">Grid Lines 
+    </a></li>
+    <li><a class="nav-link" href="#grid-template-columns">grid-template-columns
+    </a></li>
+    <li><a class="nav-link" href="#grid-template-rows">grid-template-rows
+    </a></li>
+    <li><a class="nav-link" href="#justify-content">justify-content
+    </a></li>
+    <li><a class="nav-link" href="#align-content">align-content
+    </a></li>
+    <li><a class="nav-link" href="#reference">Reference
+    </a></li>
+  </ul>
+</nav>
+
+
+<main id="main-doc">
+   <section class="main-section" id="introduction">
+    <header>Introduction</header>
+    <article>
+      <p>The CSS grid layout offers a system of rows and columns, making it easier to design web pages without having to use relative or absolute positioning.
+      </p>
+      <p>Grid properties are supported in all modern browsers.
+      </p>
+      <p>A grid layout consists of a parent element with one or more child elements.
+        </p>
+      <p>Example:</p>
+      <samp>&lt;div class="grid-example"&gt;
+          &nbsp;&nbsp;&lt;div class="grid-item"&gt;1&lt;/div&gt;
+          &nbsp;&nbsp;&lt;div class="grid-item"&gt;2&lt;/div&gt;
+          &nbsp;&nbsp;&lt;div class="grid-item"&gt;3&lt;/div
+        &lt;/div&gt;
+      </samp>
+      <p>An HTML element becomes a grid container when its <code>display</code> property is set to <code>grid</code> or <code>inline-grid</code>.
+      </p>      
+      <p>Example:</p>
+      <samp>.grid-example {
+  &nbsp;&nbsp;display: grid;
+        }</samp>
+      <p>The vertical lines of grid items are called "columns."  The horizontal lines of grid items are called "rows." </p>
+      
+      </article></section>
+  
+  <section class="main-section" id="grid_gaps">
+    <header>Grid Gaps</header>
+    <article>
+      <p>The space between the items is called the "gap."  There are vertical "column gaps" between the columns and horizontal "row gaps" between the rows.</p>
+      <p>The <code>grid-column-gap</code> property sets the gap between columns. Example:</p>
+      <samp>.grid-example {
+  &nbsp;&nbsp;display: grid;
+  &nbsp;&nbsp;grid-column-gap: 20px;
+}</samp>
+  <p>The <code>grid-row-gap</code> property sets the gap between rows. Example:</p>
+      <samp>.grid-example {
+  &nbsp;&nbsp;display: grid;
+  &nbsp;&nbsp;grid-row-gap: 20px;
+}</samp>
+      <p>The <code>grid-gap</code> property can be used with two values to set both the row gap and the column gap, or it can be used to set both the row and column gap to a single value. Example:</p>
+      <samp>.grid-example {
+  &nbsp;&nbsp;display: grid;
+  &nbsp;&nbsp;grid-gap: 20px 50px;
+}</samp>
+      </article></section>
+  
+  <section class="main-section" id="grid_lines">
+    <header>Grid Lines</header>
+    <article>
+      <p>The lines between columns are called "column lines."  The lines between rows are called "row lines"</p>
+  <img src="https://www.w3schools.com/css/grid_lines.png" alt="Grid Lines" height="500px" width="600px">
+      </article></section>
+  
+  <section class="main-section" id="grid-template-columns">
+    <header>grid-template-columns</header>
+    <article>
+      <p>The <code>grid-template-columns</code> property defines the number of columns in the grid, and it can define the width of each column.  The value is a space separated list, where each value designates the width of the respective column.</p>
+  <p>Example - A grid with four columns:</p>
+      <samp>.grid-example {
+  &nbsp;&nbsp;display: grid;
+  &nbsp;&nbsp;grid-template-columns: 100px auto 50px auto;
+}</samp>
+      </article></section>
+  
+  <section class="main-section" id="grid-template-rows">
+    <header>grid-template-rows</header>
+    <article>
+      <p>The <code>grid-template-rows</code> property defines the number and height of rows in the grid, similarly to <code>grid-template-columns</code> .</p>
+  <p>Example - A grid with three rows:</p>
+      <samp>.grid-example {
+  &nbsp;&nbsp;display: grid;
+  &nbsp;&nbsp;grid-template-rows: 20px 25px auto;
+}</samp></article></section>
+  
+  <section class="main-section" id="justify-content">
+    <header>justify-content</header>
+    <article>
+      <p>The <code>justify-content</code> property is used to align the content horizontally. Allowed property values are:</p>
+      <ul>
+        <li><code>flex-start</code>: default value. items positioned to the left</li>
+        <li><code>flex-end</code>: items positioned to the right</li>
+        <li><code>center</code>: items positioned in the center</li>
+        <li><code>space-between</code>: items will have space between them</li>
+        <li><code>space-around</code>: items will have space before, between, and after</li>
+        <li><code>space-evenly</code>: items will have equal space around them</li>
+        <li><code>initial</code>: sets property to default value</li>
+        <li><code>inherit</code>: inherits this property from its parent</li>
+      </ul>
+    </article></section>
+  
+  <section class="main-section" id="align-content">
+    <header>align-content</header>
+    <article>
+    <p>The <code>align-content</code> property is used to align the content vertically. Allowed property values are:</p>
+      <ul>
+        <li><code>stretch</code>: default value. items are stretched to fit</li>
+        <li><code>center</code>: items positioned in the center</li>
+        <li><code>flex-start</code>: items positioned at the top</li>
+        <li><code>flex-end</code>: items positioned at the bottom</li>
+        <li><code>baseline</code>: items positioned at the baseline</li>
+        <li><code>initial</code>: sets property to default value</li>
+        <li><code>inherit</code>: inherits this property from its parent</li>
+      </ul>  
+    </article></section>
+  
+  <section class="main-section" id="reference">
+    <header>Reference</header>
+    <article>
+    <a href="https://www.w3schools.com/css/css_grid.asp" target="_blank">Information sourced from w3schools.com</a>
+      </article>
+  </section>
+  
+</main>
+<!-- partial -->
+  
+</body>
+</html>

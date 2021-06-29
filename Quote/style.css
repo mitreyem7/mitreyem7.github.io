@@ -1,0 +1,54 @@
+* {
+  font-size: 20px; 
+  color: green;
+}
+
+#container {
+  background-color: lightgreen;
+  height: 100vh;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#quote-box {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 60%; 
+  background-color: white;
+}
+
+#quote-text {
+  margin: 20px;
+  height: 100px;
+}
+
+#quote-author {
+  text-align: right;
+  margin: 20px;
+}
+
+#buttons {
+  margin: 20px;  
+}
+
+#tweet-quote {
+  margin: 20px;
+  float: left;
+  color: green;
+}
+
+#new-quote {
+  margin: 20px;
+  float: right;
+  color: green;
+  border-color: green;
+}
+
+@media (max-width: 1000px) {
+  #quote-box {
+    margin-top: 20px;
+    width: 90%; 
+  }
+}
