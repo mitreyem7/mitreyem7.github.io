@@ -81,8 +81,11 @@ img {
   object-fit: fill;
 }
 
+.project-image.hover {
+  border: 2px;
+}
+
 .project-tile:hover {
-    padding: 2px;
     text-decoration: underline;
   
 }
