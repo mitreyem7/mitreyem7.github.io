@@ -82,6 +82,7 @@ img {
 }
 
 .project-tile:hover {
+    padding: 2px;
     text-decoration: underline;
   
 }
