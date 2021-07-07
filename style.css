@@ -86,10 +86,6 @@ img {
     padding: 2px;
 }
 
-.project-image.hover {
-  border: 2px solid black;
-}
-
 .contact-section {
   display: flex;
   flex-direction: row;
