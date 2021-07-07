@@ -76,7 +76,7 @@ img {
   margin: 0 auto;
 }
 
-.project-tile {
+.project-tiles {
   display: flex;
   flex-direction: column;
 }
@@ -88,7 +88,7 @@ img {
 
 .project-tile:hover {
     text-decoration: underline;
-    padding: 2px;
+    margin: 2px;
 }
 
 .contact-section {
