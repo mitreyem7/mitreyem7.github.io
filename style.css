@@ -76,6 +76,11 @@ img {
   margin: 0 auto;
 }
 
+.project-tile {
+  display: flex;
+  flex-direction: column;
+}
+
 .project-image {
 
   object-fit: fill;
