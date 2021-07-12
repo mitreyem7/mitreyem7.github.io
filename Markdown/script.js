@@ -1,3 +1,4 @@
+/* setting options for the borrowed "marked" library */
 marked.setOptions({
   gfm: true,
   breaks: true });

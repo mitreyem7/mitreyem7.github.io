@@ -1,3 +1,4 @@
+/* loading the drum pads */
 const pads = [
 {
   keyCode: 81,
@@ -45,7 +46,7 @@ const pads = [
   url: 'https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3' }];
 
 
-
+/* class for each drum pad to handle clicks */
 class DrumPad extends React.Component {
   constructor(props) {
     super(props);
@@ -106,6 +107,8 @@ class App extends React.Component {
       display: display });
 
   }
+
+  /* rendering the entire ui */
   render() {
     let PadBank = pads.map(pad => {
       return /*#__PURE__*/(

@@ -20,6 +20,7 @@ class Clock extends React.Component {
 
   }
 
+  /* decrements the length of the break */
   decBreakLength() {
     if (this.state.breakLength > 1) {
       this.setState({
@@ -32,6 +33,8 @@ class Clock extends React.Component {
     document.getElementById("start_stop").className = "fas fa-play fa-2x";
     clearInterval(this.timerInterval);
   }
+
+  /* increments the length of the break */
   incBreakLength() {
     if (this.state.breakLength < 60) {
       this.setState({
@@ -44,6 +47,8 @@ class Clock extends React.Component {
     document.getElementById("start_stop").className = "fas fa-play fa-2x";
     clearInterval(this.timerInterval);
   }
+
+  /* decrements the length of the session */
   decSessLength() {
     if (this.state.sessionLength > 1) {
       this.setState({
@@ -56,6 +61,8 @@ class Clock extends React.Component {
     document.getElementById("start_stop").className = "fas fa-play fa-2x";
     clearInterval(this.timerInterval);
   }
+
+  /* increments the length of the session */
   incSessLength() {
     if (this.state.sessionLength < 60) {
       this.setState({
@@ -69,6 +76,8 @@ class Clock extends React.Component {
     clearInterval(this.timerInterval);
   }
 
+
+  /* decrement the timer by 1 second */
   decrementTimer() {
     if (this.state.timer == 0) {
       beep.play();
@@ -94,11 +103,13 @@ class Clock extends React.Component {
     }
   }
 
+  /* runs the timer decrement function every second */
   startTimer() {
     this.timerInterval = setInterval(() => this.decrementTimer(), 1000);
 
   }
 
+  /* handles reset button click */
   resetClick() {
     document.getElementById("start_stop").className = "fas fa-play fa-2x";
     clearInterval(this.timerInterval);
@@ -112,6 +123,7 @@ class Clock extends React.Component {
     beep.currentTime = 0;
   }
 
+  /* handles play/pause button click */
   changeStatus() {
     let statusButton = document.getElementById("start_stop");
     let currentButton = statusButton.className;

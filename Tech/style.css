@@ -7,6 +7,13 @@ body {
   line-height: 1.5;
 }
 
+header {
+  margin: 10px;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+}
+
 #navbar {
   position: fixed;
   top: 0px;
@@ -16,13 +23,6 @@ body {
   border-right: solid;
   border-color: gray;
 
-}
-
-header {
-  margin: 10px;
-  text-align: center;
-  font-size: 2em;
-  font-weight: bold;
 }
 
 #navbar ul {
@@ -91,6 +91,7 @@ code {
   font-size: .9em;
 }
 
+/* responsive ui design */
 @media only screen and (max-width: 800px) {
   #navbar ul {
  padding: 0;

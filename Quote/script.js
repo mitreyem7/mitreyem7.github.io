@@ -2,6 +2,7 @@ let currentQuote = "";
 let currentAuthor = "";
 let rand = -1;
 
+/* quote bank */
 const quoteData = [
   {
     quote: 'Our lives improve only when we take chances - and the first and most difficult risk we can take is to be honest with ourselves.',

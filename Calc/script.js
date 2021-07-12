@@ -25,6 +25,7 @@ class Calculator extends React.Component {
 
   }
 
+  /* replaces duplicte operators and evaluates the formula */
   evalFormula() {
     let currentFormula = this.state.formula;
     currentFormula = currentFormula.replace(/-{2}/g, "+");
@@ -38,6 +39,7 @@ class Calculator extends React.Component {
     Math.round(1000000000000 * eval(currentFormula)) / 1000000000000;
   }
 
+  /* runs when a number is input */
   handleNumber(e) {
     if (this.state.done) {
       this.setState({
@@ -69,6 +71,8 @@ class Calculator extends React.Component {
     }
 
   }
+
+  /* runs when an operator is input */
   handleOperator(e) {
     let newOperator = e.target.value.toString();
     let newFormula = this.state.currentValue;
@@ -107,6 +111,7 @@ class Calculator extends React.Component {
     }
   }
 
+  /* runs when = is input */
   handleEqual() {
     let lastValue = this.state.currentValue;
     if (endsWithOperator.test(lastValue)) {
@@ -121,6 +126,7 @@ class Calculator extends React.Component {
     });
   }
 
+  /* runs when <- is input */
   backSpace() {
     if (this.state.currentValue.length > 0) {
       this.setState({
