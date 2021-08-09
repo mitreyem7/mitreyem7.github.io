@@ -59,6 +59,10 @@ img {
   background-color: #ccc;
 
 }
+
+.welcome-section h2 {
+  width: 50%;
+}
 /* end welcome section styling */
 
 /* projects section styling */
